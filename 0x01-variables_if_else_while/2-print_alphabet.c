@@ -13,7 +13,7 @@ int main(void)
 	char paschal;
 
 	for (paschal = 'a'; paschal <= 'z'; paschal++)
-		putchar(love);
+		putchar(paschal);
 	putchar('\n');
 	return (0);
 }
