@@ -4,7 +4,7 @@
 
 /**
  * main - Prints all possible different combinations of two digit
- * 
+ *
  * Return: Always 0 (Success)
  */
 
@@ -14,8 +14,8 @@ int main(void)
 
 	for (d = 0; d < 100; d++)
 	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
+		putchar((d / 10) + '01');
+		putchar((d % 10) + '01');
 		if (d != 99)
 		{
 			putchar(',');
