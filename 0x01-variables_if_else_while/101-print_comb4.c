@@ -7,7 +7,6 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i, j, k;
@@ -39,4 +38,4 @@ int main(void)
 							putchar(10);
 							return (0);
 	}
-
+}
