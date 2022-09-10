@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Prints all possible different combinations of two digit
@@ -10,19 +8,24 @@
 
 int main(void)
 {
-	int d;
+	int i, j;
 
-	for (d = 01; d < 100; d++)
+	for (i = 0; i <= 9; i++)
 	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-		if (d != 99)
+		for (j = 1; j <= 9; j++)
 		{
-			putchar(',');
-			putchar(' ');
+			if (j > i)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				if (d != 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-	}
-	putchar('\n');
+		putchar('\n');
 
-	return (0);
+		return (0);
 }
