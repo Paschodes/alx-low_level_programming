@@ -40,4 +40,5 @@ int is_prime_number(int n)
 	else
 	{
 	return (helperFunction(n, 2));
+	}
 }
