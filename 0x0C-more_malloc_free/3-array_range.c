@@ -7,6 +7,7 @@
  *
  * Return: array
  */
+
 int *array_range(int min, int max)
 {
 	int *arr, i = 0, t = min;
@@ -18,6 +19,6 @@ int *array_range(int min, int max)
 	if (!arr)
 		return (0);
 	while (i <= max - min)
-		arr[i++] - t++;
+		arr[i++] = t++;
 	return (arr);
 }
